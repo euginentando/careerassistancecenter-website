@@ -23,3 +23,18 @@ document.getElementById('whatsappButton').addEventListener('click', () => {
 document.getElementById('facebookButton').addEventListener('click', () => {
     window.location.href = 'https://www.facebook.com/profile.php?id=100063768595908';
 });
+
+function openFullscreen(img) {
+    const overlay = document.getElementById('fullscreenOverlay');
+    const fullscreenImage = document.getElementById('fullscreenImage');
+    
+    fullscreenImage.src = img.src;
+    overlay.style.display = 'flex';
+  }
+  
+  function closeFullscreen() {
+    const overlay = document.getElementById('fullscreenOverlay');
+    overlay.style.display = 'none';
+  }
+  
+
